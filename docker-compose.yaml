@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  app:
+    image: gcc:11
+    volumes:
+      - ./:/app
+    working_dir: /app
+    command: sh -cx "make && ./build/app"
