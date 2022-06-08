@@ -8,7 +8,7 @@
 #include "../../include/arrays/arrays.h"
 
 // Predefine in the preprocessor the length for the list of exercises
-#define AMOUNT_EXERCISES 3
+#define AMOUNT_EXERCISES 10
 
 int main(void) 
 {   
@@ -24,7 +24,7 @@ int main(void)
     */
 
     
-    char *exercises[AMOUNT_EXERCISES] = {"01", "02", "03"};
+    char *exercises[AMOUNT_EXERCISES] = {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10"};
     // Launching the App
     app_v2(exercises, AMOUNT_EXERCISES);
     
