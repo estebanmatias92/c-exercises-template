@@ -130,7 +130,7 @@ void launch_exercise_string(char *option)
     else if (strcmp(option, "10") == 0)
     {
         ejercicio_10();
-    } 
+    }  
 }
 
 /*

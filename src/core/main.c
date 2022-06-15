@@ -12,7 +12,7 @@
 
 int main(void) 
 {   
-    /*
+    
     int exercises[AMOUNT_EXERCISES];
     // Populate the list
     for(int i = 0; i < AMOUNT_EXERCISES; i++)
@@ -21,13 +21,13 @@ int main(void)
     }
     // Launching the App
     app_v1(exercises, AMOUNT_EXERCISES); 
-    */
-
     
-    char *exercises[AMOUNT_EXERCISES] = {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10"};
+
+    /*
+    char *exercises[AMOUNT_EXERCISES] = {"01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13"};
     // Launching the App
     app_v2(exercises, AMOUNT_EXERCISES);
-    
+    */
 
     // Closing the program and the prompt
     system("exit");

@@ -1,6 +1,8 @@
 {
     "makefile.extensionOutputFolder": "./.vscode",
     "files.associations": {
-        "main.h": "c"
+        "main.h": "c",
+        "ejercicios.h": "c",
+        "arrays.h": "c"
     }
 }
