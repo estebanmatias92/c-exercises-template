@@ -23,4 +23,20 @@ char array_min_char(char *array, size_t length);
 int array_average_int(int *array, size_t length);
 float array_average_float(float *array, size_t length);
 
+int *range_int(int start, int end);
+float *range_float(float start, float end);
+double *range_double(double start, double end);
+
+int *array_map_int(int *array, size_t length, int (*func)(int));
+float *array_map_float(float *array, size_t length, float (*func)(float));
+
+size_t array_filter_int(int *array, int *filtered, size_t length, int (*func)(int));
+size_t array_filter_float(float *array, float *filtered, size_t length, int (*func)(float));
+
+void print_array_int(int *array, size_t length, char *start, char *separator, char* end);
+void print_array_float(float *array, size_t length, char *start, char *separator, char* end);
+void print_array_double(double *array, size_t length, char *start, char *separator, char* end);
+
+void copy_array_int(int *src, int *dest, size_t length);
+
 #endif

@@ -4,7 +4,6 @@
 #include "../../../include/core/menu/menu.h"
 #include "../../../include/core/exercises/ejercicios.h"
 
-
 void print_menu_title(void);
 
 /*

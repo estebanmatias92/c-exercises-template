@@ -372,3 +372,209 @@ float array_average_float(float *array, size_t length)
 
     return (sum / (float)length);
 }
+
+/*
+    Creates an array of integers from a minium number up to a maximum
+*/
+int *range_int(int start, int end)
+{
+    const size_t length = (size_t) abs(start - end);
+    int *array = (int *) malloc(sizeof(int) * length);
+
+    if (length == 0)
+        return array;    
+
+    int value = start;
+    for (size_t i = 0; i < length; i++)
+    {
+        // Populate the array
+        array[i] = value;
+        // Increment the value 1 each iteration
+        value = (start < end) ? (value + 1) : (value - 1);
+    }
+    
+    return array;
+}
+
+/*
+    Creates an array of floats from a minium number up to a maximum
+*/
+float *range_float(float start, float end)
+{
+    const size_t length = (size_t) abs(start - end);
+    float *array = (float *) malloc(sizeof(float) * length);
+
+    if (length == 0)
+        return array;    
+
+    float value = start;
+    for (size_t i = 0; i < length; i++)
+    {
+        // Populate the array
+        array[i] = value;
+        // Increment the value 1 each iteration
+        value = (start < end) ? (value + 1) : (value - 1);
+    }
+    
+    return array;
+}
+
+/*
+    Creates an array of doubles from a minium number up to a maximum
+*/
+double *range_double(double start, double end)
+{
+    const size_t length = (size_t) abs(start - end);
+    double *array = (double *) malloc(sizeof(double) * length);
+
+    if (length == 0)
+        return array;    
+
+    double value = start;
+    for (size_t i = 0; i < length; i++)
+    {
+        // Populate the array
+        array[i] = value;
+        // Increment the value 1 each iteration
+        value = (start < end) ? (value + 1) : (value - 1);
+    }
+    
+    return array;
+}
+
+/*
+    Simple array map function, iterates does aritmetic with the old array values, and creates a second array with the new values
+*/
+int *array_map_int(int *array, size_t length, int (*func)(int))
+{
+    int *new_array = (int *) malloc(sizeof(int) * length);
+
+    for (size_t i = 0; i < length; i++)
+        new_array[i] = func(array[i]);
+    
+    return new_array;    
+}
+
+/*
+    Simple array map function, iterates does aritmetic with the old array values, and creates a second array with the new values
+*/
+float *array_map_float(float *array, size_t length, float (*func)(float))
+{
+    float *new_array = (float *) malloc(sizeof(float) * length);
+
+    for (size_t i = 0; i < length; i++)
+        new_array[i] = func(array[i]);
+    
+    return new_array; 
+}
+
+/*
+    Evaluates every index and returns a new array with the values that pass the test
+*/
+size_t array_filter_int(int *array, int *filtered, size_t length, int (*func)(int))
+{
+    size_t new_size = 0;
+
+    for (size_t i = 0; i < length; i++)
+    {
+        if (func(array[i]) == 0)
+        {
+            new_size++;
+            array_push_int(filtered, new_size, array[i]);
+        }
+    }
+    
+    return new_size;    
+}
+
+/*
+    Evaluates every index and returns a new array with the values that pass the test
+*/
+size_t array_filter_float(float *array, float *filtered, size_t length, int (*func)(float))
+{
+    size_t new_size = 0;
+
+    for (size_t i = 0; i < length; i++)
+    {
+        if (func(array[i]) == 0)
+        {
+            new_size++;
+            array_push_float(filtered, new_size, array[i]);
+        }
+    }
+    
+    return new_size;    
+}
+
+/*
+    Print array in one line
+*/
+void print_array_int(int *array, size_t length, char *start, char *separator, char* end)
+{
+    char start_string[32];
+    snprintf(start_string, 32, start, length);
+    printf("%s", start_string);
+
+    for (size_t i = 0; i < length; i++)
+    {        
+        printf("%d", array[i]);
+
+        if (i < length - 1)   
+            printf("%s ", separator);        
+    }
+
+    printf("%s", end);
+}
+
+/*
+    Print array in one line
+*/
+void print_array_float(float *array, size_t length, char *start, char *separator, char* end)
+{
+    char start_string[32];
+    snprintf(start_string, 32, start, length);
+    printf("%s", start_string);
+
+    for (size_t i = 0; i < length; i++)
+    {        
+        printf("%.2f", array[i]);
+
+        if (i < length - 1)   
+            printf("%s ", separator);        
+    }
+
+    printf("%s", end);
+}
+
+/*
+    Print array in one line
+*/
+void print_array_double(double *array, size_t length, char *start, char *separator, char* end)
+{
+    char start_string[32];
+    snprintf(start_string, 32, start, length);
+    printf("%s", start_string);
+
+    for (size_t i = 0; i < length; i++)
+    {        
+        printf("%.2f", array[i]);
+
+        if (i < length - 1)   
+            printf("%s ", separator);        
+    }
+
+    printf("%s", end);
+}
+
+/*
+    Function to copy values from one array to another
+*/
+void copy_array_int(int *src, int *dest, size_t length)
+{
+    dest = (int *) malloc(sizeof(int));
+
+    for (size_t i = 0; i < length; i++)
+    {
+        array_push_int(dest, (i + 1), src[i]);
+    }
+}

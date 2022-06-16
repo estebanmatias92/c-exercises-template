@@ -5,6 +5,6 @@
 void ejercicio_1() 
 {    
 
-    printf("\n...Doing exercise 1!\n");
+	printf("\n...Doing exercise 1!\n");
 
 }
