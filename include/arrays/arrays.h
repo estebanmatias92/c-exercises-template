@@ -30,8 +30,8 @@ double *range_double(double start, double end);
 int *array_map_int(int *array, size_t length, int (*func)(int));
 float *array_map_float(float *array, size_t length, float (*func)(float));
 
-size_t array_filter_int(int *array, int *filtered, size_t length, int (*func)(int));
-size_t array_filter_float(float *array, float *filtered, size_t length, int (*func)(float));
+size_t array_filter_int(int *array, size_t length, int *filtered, int (*func)(int));
+size_t array_filter_float(float *array, size_t length, float *filtered, int (*func)(float));
 
 void print_array_int(int *array, size_t length, char *start, char *separator, char* end);
 void print_array_float(float *array, size_t length, char *start, char *separator, char* end);

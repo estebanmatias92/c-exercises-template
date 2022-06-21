@@ -83,3 +83,19 @@ int is_prime_int(int value)
     // If the value make it here, it means is probably prime, so return true
     return 0;
 }
+
+/*
+    Convert integer to it's triangular value
+*/
+int triangular_number_int(int value)
+{
+    return ((value * (value + 1)) / 2);
+}
+
+/*
+    Convert float to it's triangular value
+*/
+float triangular_number_float(float value)
+{
+    return ((value * (value + (float) 1)) / (float) 2);
+}

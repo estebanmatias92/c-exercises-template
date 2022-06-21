@@ -12,4 +12,7 @@ int is_odd_int(int value);
 
 int is_prime_int(int value);
 
+int triangular_number_int(int value);
+float triangular_number_float(float value);
+
 #endif

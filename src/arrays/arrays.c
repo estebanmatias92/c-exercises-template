@@ -471,7 +471,7 @@ float *array_map_float(float *array, size_t length, float (*func)(float))
 /*
     Evaluates every index and returns a new array with the values that pass the test
 */
-size_t array_filter_int(int *array, int *filtered, size_t length, int (*func)(int))
+size_t array_filter_int(int *array, size_t length, int *filtered, int (*func)(int))
 {
     size_t new_size = 0;
 
@@ -490,7 +490,7 @@ size_t array_filter_int(int *array, int *filtered, size_t length, int (*func)(in
 /*
     Evaluates every index and returns a new array with the values that pass the test
 */
-size_t array_filter_float(float *array, float *filtered, size_t length, int (*func)(float))
+size_t array_filter_float(float *array, size_t length, float *filtered, int (*func)(float))
 {
     size_t new_size = 0;
 
@@ -509,7 +509,7 @@ size_t array_filter_float(float *array, float *filtered, size_t length, int (*fu
 /*
     Print array in one line
 */
-void print_array_int(int *array, size_t length, char *start, char *separator, char* end)
+void print_array_int(int *array, size_t length, char *start, char *separator, char *end)
 {
     char start_string[32];
     snprintf(start_string, 32, start, length);
@@ -529,7 +529,7 @@ void print_array_int(int *array, size_t length, char *start, char *separator, ch
 /*
     Print array in one line
 */
-void print_array_float(float *array, size_t length, char *start, char *separator, char* end)
+void print_array_float(float *array, size_t length, char *start, char *separator, char *end)
 {
     char start_string[32];
     snprintf(start_string, 32, start, length);

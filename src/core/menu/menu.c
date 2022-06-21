@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <string.h>
 
-#include "../../../include/core/menu/menu.h"
 #include "../../../include/core/exercises/ejercicios.h"
+#include "../../../include/core/menu/menu.h"
+#include "../../../include/arrays/arrays.h"
+
 
 void print_menu_title(void);
 
@@ -143,4 +145,73 @@ void print_menu_title(void)
     printf("\n============\n");
 
     printf("\nEjercicio:");
+}
+
+/*
+    Automate user input for numbers and store them in array
+*/
+int stdin_populate_array(char *message, void *array, const unsigned int min, char data_type)
+{
+    // Start the size counter
+    size_t count = 0;
+
+    // Check for silly values
+    if (min == 0)
+        return count;
+
+    // To store user's answer
+    char input;
+
+    do
+    {   
+        // Update the size of the array    
+        count++;
+
+        // Ask for user input
+        printf("%s", message);
+        fflush(stdin);
+
+        // Check the data type the user wants to enter and store
+        switch (data_type)
+        {
+        case 'N':
+        case 'n':
+            unsigned int natural = 0;
+            scanf("%d", &natural);
+            // Store the value into the array
+            array_push_int(array, count, natural);
+            break;
+
+        case 'Z':
+        case 'z':
+            int integer = 0;
+            scanf("%d", &integer);
+            // Store the value into the array
+            array_push_int(array, count, integer);
+            break;
+
+        case 'Q':
+        case 'q':
+            float rational = 0;
+            scanf("%f", &rational);
+            // Store the value into the array
+            array_push_float(array, count, rational);
+            break;
+        
+        default:
+            return count;
+        }
+
+        // If count exceeds the minimum, starts asking the user for input
+        if (count >= min)
+        {
+            printf("Desea continuar? (y/n): ");
+            fflush(stdin);
+            scanf(" %c", &input);
+        }        
+
+    } while (count < min || (input == 'y' || input == 'Y'));
+
+    // Return to total count of entered values
+    return count;
 }
