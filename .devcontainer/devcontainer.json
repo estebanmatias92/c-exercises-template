@@ -1,5 +1,5 @@
 {
-    "name": "c-exercises-template",
+    "name": "c-workspace",
     "dockerComposeFile": ["./docker-compose-workspace.yaml"],
     "service": "workspace",
     "workspaceFolder": "/workspace",
