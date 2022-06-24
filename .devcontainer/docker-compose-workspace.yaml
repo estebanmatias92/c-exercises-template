@@ -1,0 +1,8 @@
+version: "3.8"
+
+services:
+  workspace:
+    image: gcc:11
+    tty: true
+    volumes:
+      - ./../:/workspace

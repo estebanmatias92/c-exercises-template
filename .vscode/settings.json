@@ -4,5 +4,8 @@
         "main.h": "c",
         "ejercicios.h": "c",
         "arrays.h": "c"
-    }
+    },
+    "c-cpp-flylint.clang.defines": [
+    
+    ]
 }

@@ -1,0 +1,20 @@
+{
+    "name": "c-exercises-template",
+    "dockerComposeFile": ["./docker-compose-workspace.yaml"],
+    "service": "workspace",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+      // Configure properties specific to VS Code.
+      "vscode": {
+        // Add the IDs of extensions you want installed when the container is created.
+        "extensions": [
+          "ms-vscode.cpptools", 
+          "formulahendry.code-runner", 
+          "ms-vscode.cpptools-extension-pack", 
+          "hars.cppsnippets", 
+          "jbenden.c-cpp-flylint",
+          "ms-vscode.makefile-tools"
+        ]
+      }
+    }
+  }

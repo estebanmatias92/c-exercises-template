@@ -1,4 +1,564 @@
-make.exe all --print-data-base --no-builtin-variables --no-builtin-rules --question
-'make.exe' is not recognized as an internal or external command,
-operable program or batch file.
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
 
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Fri Jun 24 03:40:11 2022
+
+# Variables
+
+# environment
+REMOTE_CONTAINERS_SOCKETS = ["/tmp/vscode-ssh-auth-f3e04931e4b121ffcd1e9fef80b7ff9bdd50aadb.sock"]
+# environment
+LC_ALL = C
+# environment
+VSCODE_CWD = /vscode/vscode-server/bin/linux-x64/30d9c6cd9483b2cc586687151bcbcd635f373630
+# default
+MAKE_COMMAND := make
+# environment
+VSCODE_HANDLES_SIGPIPE = true
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# makefile (from 'Makefile', line 22)
+INC_FLAGS := -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings
+# default
+.VARIABLES := 
+# environment
+PWD = /workspace
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+HOSTNAME = bf1ce3157ca8
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+LANG = C
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# environment
+GCC_MIRRORS = https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		ftp://ftp.gnu.org/gnu/gcc
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /workspace
+# environment
+VSCODE_PIPE_LOGGING = true
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# makefile (from 'Makefile', line 9)
+SRCS := src/arrays/arrays.c src/core/exercises/ejercicio-1.c src/core/exercises/ejercicio-10.c src/core/exercises/ejercicio-2.c src/core/exercises/ejercicio-3.c src/core/exercises/ejercicio-4.c src/core/exercises/ejercicio-5.c src/core/exercises/ejercicio-6.c src/core/exercises/ejercicio-7.c src/core/exercises/ejercicio-8.c src/core/exercises/ejercicio-9.c src/core/main.c src/core/menu/menu.c src/math/math.c src/strings/strings.c
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /tmp/vscode-ssh-auth-f3e04931e4b121ffcd1e9fef80b7ff9bdd50aadb.sock
+# default
+.SHELLFLAGS := -c
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# makefile (from 'build/src/strings/strings.c.d', line 1)
+MAKEFILE_LIST := Makefile build/src/arrays/arrays.c.d build/src/core/exercises/ejercicio-1.c.d build/src/core/exercises/ejercicio-10.c.d build/src/core/exercises/ejercicio-2.c.d build/src/core/exercises/ejercicio-3.c.d build/src/core/exercises/ejercicio-4.c.d build/src/core/exercises/ejercicio-5.c.d build/src/core/exercises/ejercicio-6.c.d build/src/core/exercises/ejercicio-7.c.d build/src/core/exercises/ejercicio-8.c.d build/src/core/exercises/ejercicio-9.c.d build/src/core/main.c.d build/src/core/menu/menu.c.d build/src/math/math.c.d build/src/strings/strings.c.d
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+*F = $(notdir $*)
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 13)
+OBJS := ./build/src/arrays/arrays.c.o ./build/src/core/exercises/ejercicio-1.c.o ./build/src/core/exercises/ejercicio-10.c.o ./build/src/core/exercises/ejercicio-2.c.o ./build/src/core/exercises/ejercicio-3.c.o ./build/src/core/exercises/ejercicio-4.c.o ./build/src/core/exercises/ejercicio-5.c.o ./build/src/core/exercises/ejercicio-6.c.o ./build/src/core/exercises/ejercicio-7.c.o ./build/src/core/exercises/ejercicio-8.c.o ./build/src/core/exercises/ejercicio-9.c.o ./build/src/core/main.c.o ./build/src/core/menu/menu.c.o ./build/src/math/math.c.o ./build/src/strings/strings.c.o
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+SHLVL = 1
+# makefile (from 'Makefile', line 5)
+SRC_DIRS := src
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /vscode/vscode-server/bin/linux-x64/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+GPG_KEYS = B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+REMOTE_CONTAINERS_IPC = /tmp/vscode-remote-containers-ipc-f3e04931e4b121ffcd1e9fef80b7ff9bdd50aadb.sock
+# environment
+REMOTE_CONTAINERS = true
+# automatic
+?F = $(notdir $?)
+# automatic
++F = $(notdir $+)
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+BROWSER = /vscode/vscode-server/bin/linux-x64/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh
+# environment
+GCC_VERSION = 11.3.0
+# makefile (from 'Makefile', line 26)
+CPPFLAGS := -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP
+# makefile
+.DEFAULT_GOAL := build/app
+# default
+MAKE_VERSION := 4.3
+# 'override' directive
+.SHELLSTATUS := 0
+# environment
+VSCODE_EXTHOST_WILL_SEND_SOCKET = true
+# environment
+VSCODE_AGENT_FOLDER = /root/.vscode-server
+# environment
+_ = /bin/cat
+# makefile (from 'Makefile', line 2)
+TARGET_EXEC := app
+# environment
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-f69f5852-83dd-4b4c-bb17-ea60bf2d4742.sock
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# makefile (from 'Makefile', line 4)
+BUILD_DIR := ./build
+# environment
+HOME = /root
+# makefile (from 'Makefile', line 20)
+INC_DIRS := src src/arrays src/core src/core/exercises src/core/menu src/math src/strings
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 17)
+DEPS := ./build/src/arrays/arrays.c.d ./build/src/core/exercises/ejercicio-1.c.d ./build/src/core/exercises/ejercicio-10.c.d ./build/src/core/exercises/ejercicio-2.c.d ./build/src/core/exercises/ejercicio-3.c.d ./build/src/core/exercises/ejercicio-4.c.d ./build/src/core/exercises/ejercicio-5.c.d ./build/src/core/exercises/ejercicio-6.c.d ./build/src/core/exercises/ejercicio-7.c.d ./build/src/core/exercises/ejercicio-8.c.d ./build/src/core/exercises/ejercicio-9.c.d ./build/src/core/main.c.d ./build/src/core/menu/menu.c.d ./build/src/math/math.c.d ./build/src/strings/strings.c.d
+# default
+SUFFIXES := 
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# variable set hash-table stats:
+# Load=74/1024=7%, Rehash=0, Collisions=12/154=8%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 47, inode 1970324837113787): 13 files, no impossibilities.
+
+# 13 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+build/%.c.o: %.c
+#  recipe to execute (from 'Makefile', line 34):
+	mkdir -p $(dir $@)
+	$(CC) $(CPPFLAGS) $(CFLAGS) -c $< -o $@
+
+build/%.cpp.o: %.cpp
+#  recipe to execute (from 'Makefile', line 39):
+	mkdir -p $(dir $@)
+	$(CXX) $(CPPFLAGS) $(CXXFLAGS) -c $< -o $@
+
+# 2 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+build/src/core/exercises/ejercicio-6.c.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-15 19:23:00.0937736
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/strings/strings.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/core/exercises/../../../include/core/exercises/ejercicios.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/src/core/exercises/ejercicio-9.c.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-15 19:23:02.511969
+#  File has been updated.
+#  Successfully updated.
+
+build/src/core/exercises/ejercicio-8.c.o: src/core/exercises/ejercicio-8.c src/core/exercises/../../../include/core/exercises/ejercicios.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/src/core/exercises/ejercicio-3.c.o: src/core/exercises/ejercicio-3.c src/core/exercises/../../../include/core/exercises/ejercicios.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/core/../../include/arrays/arrays.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/arrays/../../include/strings/strings.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/src/core/exercises/ejercicio-5.c.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-15 19:22:59.2631236
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/core/exercises/ejercicio-6.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/core/menu/../../../include/core/exercises/ejercicios.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/src/core/exercises/ejercicio-1.c.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-24 02:15:05.4043051
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/src/strings/strings.c.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-16 21:08:51.6672535
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-24 01:25:45.5346146
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/src/core/exercises/ejercicio-7.c.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-15 19:23:00.8931634
+#  File has been updated.
+ 
+#  Successfully updated.
+
+# Not a target:
+src/core/main.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/src/core/exercises/ejercicio-10.c.o: src/core/exercises/ejercicio-10.c src/core/exercises/../../../include/core/exercises/ejercicios.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/app: build/src/arrays/arrays.c.o build/src/core/exercises/ejercicio-1.c.o build/src/core/exercises/ejercicio-10.c.o build/src/core/exercises/ejercicio-2.c.o build/src/core/exercises/ejercicio-3.c.o build/src/core/exercises/ejercicio-4.c.o build/src/core/exercises/ejercicio-5.c.o build/src/core/exercises/ejercicio-6.c.o build/src/core/exercises/ejercicio-7.c.o build/src/core/exercises/ejercicio-8.c.o build/src/core/exercises/ejercicio-9.c.o build/src/core/main.c.o build/src/core/menu/menu.c.o build/src/math/math.c.o build/src/strings/strings.c.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 30):
+	$(CC) $(OBJS) -o $@ $(LDFLAGS)
+
+build/src/math/math.c.o: src/math/math.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/src/arrays/arrays.c.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-21 22:10:49.9904903
+#  File has been updated.
+#  Successfully updated.
+
+src/core/../../include/core/main.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/core/menu/menu.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/src/core/exercises/ejercicio-8.c.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-15 19:23:01.7072097
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 45):
+	rm -r $(BUILD_DIR)
+
+src/core/menu/../../../include/core/menu/menu.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/src/core/exercises/ejercicio-4.c.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-15 19:22:58.4686125
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/core/exercises/ejercicio-2.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/src/core/exercises/ejercicio-2.c.o: src/core/exercises/ejercicio-2.c src/core/exercises/../../../include/core/exercises/ejercicios.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/core/exercises/ejercicio-7.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/src/core/exercises/ejercicio-5.c.o: src/core/exercises/ejercicio-5.c src/core/exercises/../../../include/core/exercises/ejercicios.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/src/core/main.c.o: src/core/main.c src/core/../../include/core/main.h src/core/../../include/core/menu/menu.h src/core/../../include/arrays/arrays.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/src/core/exercises/ejercicio-9.c.o: src/core/exercises/ejercicio-9.c src/core/exercises/../../../include/core/exercises/ejercicios.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+src/core/menu/../../../include/arrays/arrays.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/src/math/math.c.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-21 22:11:10.7419867
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/core/exercises/ejercicio-1.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/src/core/exercises/ejercicio-4.c.o: src/core/exercises/ejercicio-4.c src/core/exercises/../../../include/core/exercises/ejercicios.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+build/src/arrays/arrays.c.o: src/arrays/arrays.c src/arrays/../../include/math/math.h src/arrays/../../include/strings/strings.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/src/core/main.c.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-24 01:27:49.1321517
+#  File has been updated.
+#  Successfully updated.
+
+build/src/core/menu/menu.c.o: src/core/menu/menu.c src/core/menu/../../../include/core/exercises/ejercicios.h src/core/menu/../../../include/core/menu/menu.h src/core/menu/../../../include/arrays/arrays.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/core/exercises/ejercicio-3.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/src/core/exercises/ejercicio-6.c.o: src/core/exercises/ejercicio-6.c src/core/exercises/../../../include/core/exercises/ejercicios.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/src/core/exercises/ejercicio-3.c.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-15 19:22:57.6111117
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+build/src/core/exercises/ejercicio-2.c.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-15 19:22:56.7829027
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+src/math/math.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/src/core/exercises/ejercicio-1.c.o: src/core/exercises/ejercicio-1.c src/core/exercises/../../../include/core/exercises/ejercicios.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/core/exercises/ejercicio-5.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/core/exercises/ejercicio-8.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/src/core/exercises/ejercicio-10.c.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-15 19:22:55.9473783
+#  File has been updated.
+#  Successfully updated.
+
+src/core/../../include/core/menu/menu.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/src/core/exercises/ejercicio-7.c.o: src/core/exercises/ejercicio-7.c src/core/exercises/../../../include/core/exercises/ejercicios.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build/src/strings/strings.c.o: src/strings/strings.c
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/core/exercises/ejercicio-9.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/arrays/arrays.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+build/src/core/menu/menu.c.d:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-21 22:11:08.9986605
+#  File has been updated.
+#  Successfully updated.
+
+src/arrays/../../include/math/math.h:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+.PHONY: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/core/exercises/ejercicio-4.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+src/core/exercises/ejercicio-10.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# files hash-table stats:
+# Load=61/1024=6%, Rehash=0, Collisions=9/169=5%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 79 / storage = 2152 B / avg = 27 B
+# current buf: size = 8162 B / used = 2152 B / count = 79 / avg = 27 B
+
+# strcache performance: lookups = 177 / hit rate = 55%
+ 
+# hash-table stats:
+# Load=79/8192=1%, Rehash=0, Collisions=0/177=0%
+# Finished Make data base on Fri Jun 24 03:40:12 2022
+
+ 

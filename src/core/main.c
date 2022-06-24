@@ -101,5 +101,6 @@ void app_v2(char **list, unsigned int length)
         // If the option matches the number from an excercise, then launch it
         launch_exercise_string(option);
 
-    } while (array_search_string(list, length, option) >= 0);
+    } 
+    while (array_search_string(list, length, option) >= 0);
 }

@@ -1,4 +1,51 @@
-make.exe --dry-run --always-make --keep-going --print-directory
-'make.exe' is not recognized as an internal or external command,
-operable program or batch file.
-
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/workspace'
+ 
+mkdir -p build/src/arrays/
+cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/arrays/arrays.c -o build/src/arrays/arrays.c.o
+ 
+mkdir -p build/src/core/exercises/
+cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/exercises/ejercicio-1.c -o build/src/core/exercises/ejercicio-1.c.o
+ 
+mkdir -p build/src/core/exercises/
+cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/exercises/ejercicio-10.c -o build/src/core/exercises/ejercicio-10.c.o
+ 
+mkdir -p build/src/core/exercises/
+cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/exercises/ejercicio-2.c -o build/src/core/exercises/ejercicio-2.c.o
+ 
+mkdir -p build/src/core/exercises/
+cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/exercises/ejercicio-3.c -o build/src/core/exercises/ejercicio-3.c.o
+ 
+mkdir -p build/src/core/exercises/
+cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/exercises/ejercicio-4.c -o build/src/core/exercises/ejercicio-4.c.o
+ 
+mkdir -p build/src/core/exercises/
+cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/exercises/ejercicio-5.c -o build/src/core/exercises/ejercicio-5.c.o
+ 
+mkdir -p build/src/core/exercises/
+cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/exercises/ejercicio-6.c -o build/src/core/exercises/ejercicio-6.c.o
+ 
+mkdir -p build/src/core/exercises/
+cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/exercises/ejercicio-7.c -o build/src/core/exercises/ejercicio-7.c.o
+ 
+mkdir -p build/src/core/exercises/
+cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/exercises/ejercicio-8.c -o build/src/core/exercises/ejercicio-8.c.o
+ 
+mkdir -p build/src/core/exercises/
+cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/exercises/ejercicio-9.c -o build/src/core/exercises/ejercicio-9.c.o
+ 
+mkdir -p build/src/core/
+cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/main.c -o build/src/core/main.c.o
+ 
+mkdir -p build/src/core/menu/
+cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/menu/menu.c -o build/src/core/menu/menu.c.o
+ 
+mkdir -p build/src/math/
+cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/math/math.c -o build/src/math/math.c.o
+ 
+mkdir -p build/src/strings/
+cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/strings/strings.c -o build/src/strings/strings.c.o
+ 
+cc ./build/src/arrays/arrays.c.o ./build/src/core/exercises/ejercicio-1.c.o ./build/src/core/exercises/ejercicio-10.c.o ./build/src/core/exercises/ejercicio-2.c.o ./build/src/core/exercises/ejercicio-3.c.o ./build/src/core/exercises/ejercicio-4.c.o ./build/src/core/exercises/ejercicio-5.c.o ./build/src/core/exercises/ejercicio-6.c.o ./build/src/core/exercises/ejercicio-7.c.o ./build/src/core/exercises/ejercicio-8.c.o ./build/src/core/exercises/ejercicio-9.c.o ./build/src/core/main.c.o ./build/src/core/menu/menu.c.o ./build/src/math/math.c.o ./build/src/strings/strings.c.o -o build/app 
+make: Leaving directory '/workspace'
+ 
