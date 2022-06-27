@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <math.h>
 
 #include "../../include/math/math.h"
 #include "../../include/strings/strings.h"
@@ -401,7 +402,7 @@ int *range_int(int start, int end)
 */
 float *range_float(float start, float end)
 {
-    const size_t length = (size_t) abs(start - end);
+    const size_t length = (size_t) fabsf(start - end);
     float *array = (float *) malloc(sizeof(float) * length);
 
     if (length == 0)
@@ -424,7 +425,7 @@ float *range_float(float start, float end)
 */
 double *range_double(double start, double end)
 {
-    const size_t length = (size_t) abs(start - end);
+    const size_t length = (size_t) fabs(start - end);
     double *array = (double *) malloc(sizeof(double) * length);
 
     if (length == 0)

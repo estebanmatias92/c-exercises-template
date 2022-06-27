@@ -1,11 +1,16 @@
 {
     "makefile.extensionOutputFolder": "./.vscode",
-    "files.associations": {
-        "main.h": "c",
-        "ejercicios.h": "c",
-        "arrays.h": "c"
-    },
     "c-cpp-flylint.clang.defines": [
     
-    ]
+    ],
+    "c-cpp-flylint.flexelint.executable": "lint",
+    "c-cpp-flylint.clang.enable": true,
+    "c-cpp-flylint.cppcheck.enable": false,
+    "files.autoSave": "afterDelay",
+    "cmake.buildTask": true,
+    "C_Cpp.autocompleteAddParentheses": true,
+    "c-cpp-flylint.cppcheck.executable": "cppcheck",
+    "files.associations": {
+        "arrays.h": "c"
+    },
 }

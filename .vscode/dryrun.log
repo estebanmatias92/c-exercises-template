@@ -20,6 +20,7 @@ mkdir -p build/src/core/exercises/
 cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/exercises/ejercicio-4.c -o build/src/core/exercises/ejercicio-4.c.o
  
 mkdir -p build/src/core/exercises/
+ 
 cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/exercises/ejercicio-5.c -o build/src/core/exercises/ejercicio-5.c.o
  
 mkdir -p build/src/core/exercises/
@@ -27,10 +28,8 @@ cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math
  
 mkdir -p build/src/core/exercises/
 cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/exercises/ejercicio-7.c -o build/src/core/exercises/ejercicio-7.c.o
- 
 mkdir -p build/src/core/exercises/
 cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/exercises/ejercicio-8.c -o build/src/core/exercises/ejercicio-8.c.o
- 
 mkdir -p build/src/core/exercises/
 cc -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP  -c src/core/exercises/ejercicio-9.c -o build/src/core/exercises/ejercicio-9.c.o
  

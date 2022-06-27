@@ -2,7 +2,7 @@ version: "3.8"
 
 services:
   workspace:
-    image: gcc:11
+    image: danger89/cmake
     tty: true
     volumes:
       - ./../:/workspace

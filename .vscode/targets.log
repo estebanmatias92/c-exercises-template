@@ -8,12 +8,12 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri Jun 24 03:40:11 2022
+# Make data base, printed on Sun Jun 26 23:53:59 2022
 
 # Variables
 
 # environment
-REMOTE_CONTAINERS_SOCKETS = ["/tmp/vscode-ssh-auth-f3e04931e4b121ffcd1e9fef80b7ff9bdd50aadb.sock"]
+REMOTE_CONTAINERS_SOCKETS = ["/tmp/vscode-ssh-auth-6f4ec203791a318ad6c633e44dc80655094b9fc4.sock"]
 # environment
 LC_ALL = C
 # environment
@@ -35,7 +35,7 @@ PWD = /workspace
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
-HOSTNAME = bf1ce3157ca8
+HOSTNAME = 412a14441f71
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
@@ -48,8 +48,6 @@ LANG = C
 .LOADED := 
 # default
 .INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
-# environment
-GCC_MIRRORS = https://ftpmirror.gnu.org/gcc 		https://mirrors.kernel.org/gnu/gcc 		https://bigsearcher.com/mirrors/gcc/releases 		http://www.netgull.com/gcc/releases 		https://ftpmirror.gnu.org/gcc 		ftp://ftp.gnu.org/gnu/gcc
 # makefile
 MAKEFLAGS = pqrR
 # makefile
@@ -65,7 +63,7 @@ SRCS := src/arrays/arrays.c src/core/exercises/ejercicio-1.c src/core/exercises/
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_AUTH_SOCK = /tmp/vscode-ssh-auth-f3e04931e4b121ffcd1e9fef80b7ff9bdd50aadb.sock
+SSH_AUTH_SOCK = /tmp/vscode-ssh-auth-6f4ec203791a318ad6c633e44dc80655094b9fc4.sock
 # default
 .SHELLFLAGS := -c
 # automatic
@@ -107,11 +105,9 @@ MAKEFILES :=
 # automatic
 ^F = $(notdir $^)
 # environment
-GPG_KEYS = B215C1633BCA0477615F1B35A5B3A004745C015A 	B3C42148A44E6983B3E4CC0793FA9B1AB75C61B8 	90AA470469D3965A87A5DCB494D03953902C9419 	80F98B2E0DAB6C8281BDF541A7C8C3B2F71EDF1C 	7F74F97C103468EE5D750B583AB00996FC26A641 	33C235A34C46AA3FFB293709A328C3A2C3C45C06 	D3A93CAD751C2AF4F8C7AD516C35B99309B5FA62
-# environment
 VSCODE_LOG_NATIVE = false
 # environment
-REMOTE_CONTAINERS_IPC = /tmp/vscode-remote-containers-ipc-f3e04931e4b121ffcd1e9fef80b7ff9bdd50aadb.sock
+REMOTE_CONTAINERS_IPC = /tmp/vscode-remote-containers-ipc-6f4ec203791a318ad6c633e44dc80655094b9fc4.sock
 # environment
 REMOTE_CONTAINERS = true
 # automatic
@@ -122,8 +118,6 @@ REMOTE_CONTAINERS = true
 GNUMAKEFLAGS := 
 # environment
 BROWSER = /vscode/vscode-server/bin/linux-x64/30d9c6cd9483b2cc586687151bcbcd635f373630/bin/helpers/browser.sh
-# environment
-GCC_VERSION = 11.3.0
 # makefile (from 'Makefile', line 26)
 CPPFLAGS := -Isrc -Isrc/arrays -Isrc/core -Isrc/core/exercises -Isrc/core/menu -Isrc/math -Isrc/strings -MMD -MP
 # makefile
@@ -141,7 +135,9 @@ _ = /bin/cat
 # makefile (from 'Makefile', line 2)
 TARGET_EXEC := app
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-f69f5852-83dd-4b4c-bb17-ea60bf2d4742.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-f556c5ed-ab82-4f2c-813c-436bed490d57.sock
+# environment
+DEBIAN_FRONTEND = noninteractive
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # makefile (from 'Makefile', line 4)
@@ -161,7 +157,7 @@ SUFFIXES :=
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
 # variable set hash-table stats:
-# Load=74/1024=7%, Rehash=0, Collisions=12/154=8%
+# Load=72/1024=7%, Rehash=0, Collisions=6/152=4%
 
 # Pattern-specific Variable Values
 
@@ -277,13 +273,13 @@ build/src/core/exercises/ejercicio-7.c.d:
 #  Implicit rule search has been done.
 #  Last modified 2022-06-15 19:23:00.8931634
 #  File has been updated.
- 
 #  Successfully updated.
 
 # Not a target:
 src/core/main.c:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
+ 
 #  File has not been updated.
 
 build/src/core/exercises/ejercicio-10.c.o: src/core/exercises/ejercicio-10.c src/core/exercises/../../../include/core/exercises/ejercicios.h
@@ -424,7 +420,7 @@ build/src/arrays/arrays.c.o: src/arrays/arrays.c src/arrays/../../include/math/m
 # Not a target:
 build/src/core/main.c.d:
 #  Implicit rule search has been done.
-#  Last modified 2022-06-24 01:27:49.1321517
+#  Last modified 2022-06-25 06:53:24.9991545
 #  File has been updated.
 #  Successfully updated.
 
@@ -556,9 +552,8 @@ src/core/exercises/ejercicio-10.c:
 # current buf: size = 8162 B / used = 2152 B / count = 79 / avg = 27 B
 
 # strcache performance: lookups = 177 / hit rate = 55%
- 
 # hash-table stats:
 # Load=79/8192=1%, Rehash=0, Collisions=0/177=0%
-# Finished Make data base on Fri Jun 24 03:40:12 2022
+# Finished Make data base on Sun Jun 26 23:53:59 2022
 
  
